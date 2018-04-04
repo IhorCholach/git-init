@@ -1,0 +1,127 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+@font-face{
+    font-family: RokkitBold;
+    src:url(../content/font/Rokkitt-Light.ttf);
+}
+@font-face{
+    font-family: RokkitLight;
+    src:url(../content/font/Rokkitt-Light.ttf);
+}
+.formOrder{
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	border:1px solid #f7931f;
+	background: rgba(0, 0, 0, .7);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 15vh;
+}
+.formOrder h1{
+	font-family: RokkitBold;
+	font-size: 40px;
+	color:#f7931f;
+	margin: auto;
+}
+.zzz{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+.zzz input,.zzz label{
+	width: 400px;
+	text-align:center;
+	color: #f7931f;
+	
+}
+.zzz label{
+	font-family: RokkitBold;
+	font-size: 25px;
+}
+.zzz input,.yyy input{
+	height: 22.5px;
+	border-radius: 5px;
+	border:1px solid #f7931f;
+	font-family: RokkitLight;
+	margin-bottom:15px; 
+	font-size: 20px;
+}
+.zzz input:hover,.xxx input:hover{
+	background-color:#f7931f;
+	color: black; 
+	opacity: 0.4;
+}
+button{
+    background-color: #f7931f;
+    color: white;
+    /*padding: 14px 20px;*/
+    margin: 8px auto;
+    border: none;
+    cursor: pointer;
+    width: 195px;
+    height: 5%;
+    border-radius: 50px;
+    outline: none;
+    font-family: RokkitLight;
+    font-size: 20px;
+    margin: 10px 2px;
+    text-align: center;;
+}
+button:hover {
+    box-shadow:0 5px 10px rgba(0,0,0,0.5);  transition: .1s;    
+    color: white;
+}
+button.cancelbtn{
+	background-color: red;
+	width: 110px;
+	text-align: center;
+}
+.qqq{
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+	margin: auto;
+}
+
+.qqq span{
+    margin: auto;
+}
+.yyy{
+	display: flex;
+	margin: auto;
+}
+.yyy input,.yyy label{
+	text-align:center;
+	color: #f7931f;
+	
+}
+.xxx{
+	display: flex;
+	flex-direction: column;
+}
+.xxx input{
+	width: 200px;
+}
+.xxx label{
+	font-family: RokkitBold;
+	font-size: 25px;
+}
+.forgot{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+.forgot span{
+	margin: auto auto 8px;
+}
+.forgot span a{
+	text-decoration: none;
+	color: red;
+}
+.registr{
+	margin: auto;
+}

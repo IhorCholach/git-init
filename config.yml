@@ -1,0 +1,81 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:9.6.1
+    working_directory: ~/sep-chefs-plate-frontend
+    steps:
+      - checkout
+
+  deploy:
+      machine:
+          enabled: true
+      working_directory: ~/sep-chefs-plate-frontend
+      # environment:
+      #   HEROKU_APP: "qa-sep-chefs-plate-frontend"
+      steps:
+        - checkout
+        - add_ssh_keys:  # add key from CircleCI account based on fingerprint
+            fingerprints:
+                - "b6:ec:06:b5:be:09:7c:47:fb:85:d4:16:69:66:a6:23"
+        - run:
+            name: Setup Heroku
+            command: bash .circleci/setup-heroku.sh
+
+        - run:
+            command: |
+              if [ "${CIRCLE_BRANCH}" == "qa" ]; then
+                git remote add heroku https://git.heroku.com/qa-sep-chefs-plate-frontend.git
+                git push heroku qa:master -f
+                sleep 5  # sleep for 5 seconds to wait for dynos
+                heroku restart
+              elif [ "${CIRCLE_BRANCH}" == "staging" ]; then
+                git remote add heroku https://git.heroku.com/stg-sep-chefs-plate-frontend.git
+                git push heroku staging:master -f
+                sleep 5  # sleep for 5 seconds to wait for dynos
+                heroku restart
+              elif [ "${CIRCLE_BRANCH}" == "master" ]; then
+                git remote add heroku https://git.heroku.com/prod-sep-chefs-plate-frontend.git
+                git push heroku master:master -f
+                sleep 5  # sleep for 5 seconds to wait for dynos
+                heroku restart
+              fi
+
+            # command: |
+            #   if [ "${CIRCLE_BRANCH}" == "qa" ]; then
+            #     git remote add heroku https://git.heroku.com/qa-sep-chefs-plate-frontend.git
+            #     git push heroku qa:master
+            #     sleep 5  # sleep for 5 seconds to wait for dynos
+            #     heroku restart
+            #   fi
+            # command: |
+            #   if [ "${CIRCLE_BRANCH}" == "staging" ]; then
+            #     git remote add heroku https://git.heroku.com/qa-sep-chefs-plate-frontend.git
+            #     git push heroku stg:master
+            #     sleep 5  # sleep for 5 seconds to wait for dynos
+            #     heroku restart
+            #   fi
+            # command: |
+            #   if [ "${CIRCLE_BRANCH}" == "master" ]; then
+            #     git remote add heroku https://git.heroku.com/qa-sep-chefs-plate-frontend.git
+            #     git push heroku prod:master
+            #     sleep 5  # sleep for 5 seconds to wait for dynos
+            #     heroku restart
+            #   fi
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: qa
+            branches:
+              only: staging
+            branches:
+              only: master
+

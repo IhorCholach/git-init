@@ -1,0 +1,259 @@
+* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		outline: none;
+	}
+@font-face{
+	font-family: shire;
+	src: url(../content/font/BerkshireSwash-Regular.ttf);
+}
+@font-face{
+	font-family: rokki;
+	src: url(../content/font/Rokkitt-Regular.ttf);
+}
+/* body{
+	
+	width: 100%;
+	
+	margin: 0 auto;
+} */
+.close__form{
+	position: absolute;
+	left:80%;
+	top: 22vh;
+	cursor: pointer;
+}
+.contain{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, .9);
+	height: 100vh;
+	
+
+}
+.title{
+	display: flex;
+	flex-direction: column;
+	margin-top: 15vh;
+	margin-bottom: 10px;
+	/* background: url(../content/img/Shape_chefpage.png) no-repeat center; */
+}
+h1,h3{
+	color: white;
+	text-align: center;
+}
+h1{
+	font-family: shire;
+	font-size: 72px;
+}
+h3{
+	font-family: rokki;
+	font-size: 36px;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+.or{
+	display: flex;
+	justify-content: center;
+	width: 585px;
+	 
+}
+.center{
+	display: flex;
+	
+	justify-content: center;
+}
+.center span{
+	font-family: rokki;
+	font-size: 18px;
+	color: white;
+	padding-bottom: 10px;
+}
+.line__left, .line__right{
+	width: 50%;
+}
+.line__left{
+	padding-right: 12px;
+}
+.line__right{
+	padding-left: 12px;
+}
+
+
+
+
+                                                         /* LOGIN */
+
+
+
+
+
+.log__in {
+			width: 585px;
+			margin: 0 auto;
+			padding: 15px 15px 0 15px;
+			
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			overflow: hidden;
+			padding-bottom: 40px;
+			
+		}
+		.login__mail, .login__pass {
+			position: relative;
+			height: 65px;
+			width: 100%;
+			display: block;
+			margin-bottom: 15px;
+		}
+		.login__mail:before, .login__pass:before {
+			content: '';
+			position: absolute;
+			left: 15px;
+			width: 11px;
+			height: 13px;
+			background: url(../content/img/input.png) no-repeat center center;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.mail, .pass {
+			height: inherit;
+			width: inherit;
+			padding: 0 15px 0 45px;
+			margin: 0;
+			background: 0;
+			color: #fff;
+			font-weight: bold;
+			transition: .3s;
+			border: 1px solid #fff;
+		}
+		.mail:focus, .pass:focus {
+			border-color: yellow;
+		}
+		.input__link {
+			
+			position: absolute;
+			right: 15px;
+			text-decoration: none;
+			top: 50%;
+			color: #fff;
+			transform: translateY(-50%);
+		}
+		.input__link:hover {
+			text-decoration: underline;
+		}
+		.input__link span{
+			color: orange;
+		}
+		.pass {
+			padding-right: 90px;
+		}
+
+
+		::-webkit-input-placeholder {color:gray;}
+		.log__in p {
+			text-align: center;
+			color: #fff;
+			display: inline-block;
+			vertical-align: middle;
+			margin-bottom: 15px;
+			text-transform: uppercase;
+			position: relative;
+		}
+		.log__in p:before, .log__in p:after {
+			content: '';
+			box-sizing: border-box;
+			/*display: inline-block;*/
+			/*vertical-align: middle;*/
+			height: 3px;
+			width: 20px;
+			background: #fff;
+			position: absolute;
+			width: calc(25vw - 35px);
+			top: 8px;
+			/*border: solid #000;*/
+			/*border-width: 0 10px;*/
+		}
+		.log__in p:before {
+			/*margin-left: -100%;*/
+			
+			right: 30px;
+
+		}
+
+		.log__in p:after {
+			/*margin-right: -100%;*/
+			left: 30px;
+		}
+                                              /* LOGIN   END */
+
+
+
+
+
+
+
+
+
+.bottom{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 560px;
+
+}
+.checkbox{
+	display: flex;
+	/* justify-content: ; */
+}
+.checkbox input{
+	width: 15px;
+	height: 15px;
+}
+.checkbox span{
+	color: white;
+	font-size: 18px;
+	font-family: rokki;
+	padding-left: 15px;
+}
+.span{
+
+}
+
+/* .sign__up{
+	 display: flex;
+} */
+.sign__up a{
+	text-decoration: none;
+	font-family: rokki;
+	font-size: 18px;
+	color: white;
+}
+.button__log__in{
+	width: 560px;
+	display: flex;
+	padding-top: 45px;
+	justify-content: center;
+	margin: 0 auto;
+	padding-bottom: 75px;
+}
+.button__log__in .button{
+	width: 120px;
+	height: 35px;
+	border: 0;
+	border-radius: 50px;
+	background-color: #f7931f;
+	color: white;
+	font-size: 18px;
+	font-family: rokki;
+	cursor: pointer;
+}

@@ -1,0 +1,74 @@
+*{
+	margin:0;
+	padding:0;
+}
+/*@font-face{
+	font-family: RokkitBold;
+	src:url(../fonts/Rokkitt-Bold.ttf);
+}
+@font-face{
+	font-family: RokkitLight;
+	src:url(../fonts/Rokkitt-Light.ttf);
+}*/
+.container__mealCard{
+	position: absolute;
+	top: 15vh;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#mealCard{
+	margin: 0 auto;
+	display: flex;
+	width: 660px;
+	border:1px solid orange;
+}
+#imgMeal{
+	background: url(../content/img/salmon-steak.png);
+	width: 150px;
+	height: 100px;
+	/*/*margin-left: 10px;*/
+}
+#mealInfo{
+	display: flex;
+	justify-content: space-between;
+	width: 500px;
+}
+.mealHeader{
+	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.mealHeader h3{
+	font-family: RokkitBold;
+}
+.mealHeader h4{
+	font-family: RokkitLight;
+}
+.mealData{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#price{
+	margin-bottom: 10px;
+	text-align: center;
+}
+#price span{
+	font-size: 30px;
+	font-family:RokkitBold;
+}
+#btn button{
+	width: 80px;
+	height: 30px;
+	border : 0 solid black;
+	border-radius: 50px;
+	background-color: #f7931f;
+	outline: none;
+	font-family: RokkitLight;
+	cursor: pointer;
+}
+#btn button:hover{
+	box-shadow:0 5px 10px rgba(0,0,0,0.5);	transition: .1s;	
+	color: white;
+}
