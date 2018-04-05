@@ -15,7 +15,8 @@ class Checkbox extends Component {
   render() {
     return (
       <label>
-        <input type="checkbox"
+        <input 
+          type="checkbox"
           checked={this.state.isChecked}
           onChange={this.toggleChange}
         />

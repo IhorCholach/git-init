@@ -6,14 +6,11 @@ class Header extends Component {
 /*	static propTypes = {
 		history: PropTypes.object.isRequired
 	}*/
-
 	handleBtnClick = (url) => {
 		this.props.history.push(url);
 	}
-
 	render() {
 		console.log('HEADER HISTORY', this.props);
-
 		return (
 			<header className="static__header">
 				<div className="container">

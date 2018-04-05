@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import google from '../content/img/google__footer.png'
 import facebook from '../content/img/facebook__footer.png'
 import twetter from '../content/img/twetter__footer.png'
@@ -16,7 +15,6 @@ class Chef extends Component {
 					<h2>about chef</h2>
 					<h4>creative seafood chef</h4>
 				</div>
-					
 				<div className="about__chef__describe">
 					<div className="about__chef__photo">
 						<img src={chefPhoto} alt=""/>
@@ -31,11 +29,9 @@ class Chef extends Component {
 					  		<li><a href="#"><img src={in__footer} alt="in icon"/></a></li>
 					  		<li><a href="#"><img src={instagram} alt="instagram icon"/></a></li>
 					  	</ul> 
-						
 						<div className="paragraph">
 							<p>
 							It’s important to look at tradi tion and culture for Cooking Tips & Techniques inspiation Look to the pasmov region of the cuisineown traditions.It’s important to look at tradi tion and culture for Cooking Tips & Techniques inspiation Look to the pasmov region of the cuisineown traditions.It’s important to look at tradi tion and culture for Cooking Tips & Techniques inspiation Look to the pasmov region of the cuisineown traditions.It’s important to look at tradi tion and culture for Cooking Tips & Techniques inspiation Look to the pasmov region of the cuisineown traditions.
-
 							</p>
 						</div>
 						<div className="about__chef__describe__text__buttons">

@@ -1,9 +1,43 @@
 import React, { Component } from 'react';
 
+const arr=[
+	{
+		className:"meals__meat united",
+		name:"meat"
+	},
+	{
+		className:"meals__fish united",
+		name:"fish"
+	},
+	{
+		className:"meals__soup united",
+		name:"soup"
+	},
+	{
+		className:"meals__salat united",
+		name:"salat"
+	}
+]
+
 class Main extends Component {
 	handleBtnClick = (url) => {
 		this.props.history.push(url);
 	}
+	categoryCard = () =>{
+		return(
+			arr.map((item,i)=>{
+				return(
+					<div key={i} className={item.className}>
+						<h4>{item.name}</h4>
+							<input 
+								type="button" 
+								value="order"
+								onClick={ () => this.handleBtnClick('/menu')}
+							/>
+					</div>
+		  	)}
+			)
+		)}
 	render() {
 		return (
 			<section className="chef__meals">
@@ -16,38 +50,7 @@ class Main extends Component {
 							/>
 					</div>
 					<div className="chef__meals__meals">
-						<div className="meals__meat united">
-							<h4>meat</h4>
-							<input 
-								type="button" 
-								value="order"
-								onClick={ () => this.handleBtnClick('/menu')}
-								/>
-						</div>
-						<div className="meals__fish united">
-							<h4>fish</h4>
-							<input 
-								type="button" 
-								value="order"
-								onClick={ () => this.handleBtnClick('/menu')}
-								/>
-						</div>
-						<div className="meals__soup united">
-							<h4>soup</h4>
-							<input 
-								type="button" 
-								value="order"
-								onClick={ () => this.handleBtnClick('/menu')}
-								/>
-						</div>
-						<div className="meals__salat united">
-							<h4>salat</h4>
-							<input 
-								type="button" 
-								value="order"
-								onClick={ () => this.handleBtnClick('/menu')}
-								/>
-						</div>
+						{this.categoryCard()}
 					</div>
 				</div>	
 			</section>

@@ -16,7 +16,6 @@ class MyLogin extends Component {
 				<h1>Login</h1>
 				<h3>To Your Account</h3>
 			</div>
-			
 			<form action="#" method="POST" className="log__in">
 				<div className="or">
 					<div className="line__left">
@@ -43,7 +42,6 @@ class MyLogin extends Component {
 					<span>Remember me</span>
 				</div>
 				<div className="span">
-					
 				</div>
 				<div className="sign__up">
 					<a href="#">New User ?</a>

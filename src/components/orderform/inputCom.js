@@ -7,7 +7,11 @@ class Input extends Component{
 	  			<label htmlFor={this.props.name}>
 	  				{this.props.text}
 	  			</label>
-	  			<input type='text' className={this.props.className} name={this.props.value} />
+	  			<input 
+            type='text' 
+            className={this.props.className} 
+            name={this.props.value} 
+            />
 	  		</div>
   		)
   }
