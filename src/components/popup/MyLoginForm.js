@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import * as handleBtnClick from '../constants/index'
-import './MyLoginForm.css';
-import cross from '../content/img/cross.png';
+import * as handleBtnClick from '../../constants/index'
+import '../../content/css/MyLoginForm.css';
+import cross from '../../content/img/cross.png';
 
 class MyLogin extends Component {
 	handleBtnClick = (url) => {

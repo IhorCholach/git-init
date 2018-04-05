@@ -8,7 +8,7 @@ import { connect } from 'react-redux'
 
 import * as buttonAction from '../actions/login'
 
-import './style.css';
+import '../content/css/style.css';
 
 import * as handleBtnClick from '../constants/index'
 
@@ -16,12 +16,12 @@ import Header from '../components/header';
 
 import Chef from '../components/aboutChef'
 
-import MyLogin from '../components/MyLoginForm'
+import MyLogin from '../components/popup/MyLoginForm'
 
 import CardMeal from '../components/mealCard'
 import OrderForm from '../components/orderform'
-import Login from '../components/loginForm'
-import Sign from '../components/signupCom'
+import Login from '../components/popup/loginForm'
+import Sign from '../components/popup/signupCom'
 import Main from '../components/main';
 import Footer from '../components/footer';
 
@@ -51,7 +51,7 @@ class App extends Component {
           <OrderForm history={history} />
           <Chef history={history} />*/}
 
-          <Route component={ Header } />
+          <Route path='/' component={ Header } />
           <Route exact path='/' component={ Main } />
           <Route exact path='/' component={ Footer } />
           <Route path='/login' component={ MyLogin } />

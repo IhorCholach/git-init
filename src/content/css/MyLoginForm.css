@@ -6,11 +6,11 @@
 	}
 @font-face{
 	font-family: shire;
-	src: url(../content/font/BerkshireSwash-Regular.ttf);
+	src: url(../font/BerkshireSwash-Regular.ttf);
 }
 @font-face{
 	font-family: rokki;
-	src: url(../content/font/Rokkitt-Regular.ttf);
+	src: url(../font/Rokkitt-Regular.ttf);
 }
 /* body{
 	
@@ -121,7 +121,7 @@ h3{
 			left: 15px;
 			width: 11px;
 			height: 13px;
-			background: url(../content/img/input.png) no-repeat center center;
+			background: url(../img/input.png) no-repeat center center;
 			top: 50%;
 			transform: translateY(-50%);
 		}

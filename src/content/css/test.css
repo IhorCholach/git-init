@@ -4,11 +4,11 @@
 }
 @font-face{
     font-family: RokkitBold;
-    src:url(../content/font/Rokkitt-Light.ttf);
+    src:url(../font/Rokkitt-Light.ttf);
 }
 @font-face{
     font-family: RokkitLight;
-    src:url(../content/font/Rokkitt-Light.ttf);
+    src:url(../font/Rokkitt-Light.ttf);
 }
 .formOrder{
 	display: flex;

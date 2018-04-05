@@ -6,7 +6,7 @@ import twetter from '../content/img/twetter__footer.png'
 import in__footer from '../content/img/in__footer.png'
 import instagram from '../content/img/instagram__footer.png'
 import chefPhoto from '../content/img/Chefbg.png'
-import './aboutChef.css';
+import '../content/css/aboutChef.css';
 
 class Chef extends Component {
 	render() {
@@ -39,8 +39,8 @@ class Chef extends Component {
 							</p>
 						</div>
 						<div className="about__chef__describe__text__buttons">
-							 	<input className="left" type="button" value="follow"/>
-							 	<input className="right" type="button" value="send message"/>
+							<input className="left" type="button" value="follow"/>
+							<input className="right" type="button" value="send message"/>
 						</div>
 					</div>
 				</div>

@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
-import Input from './inputCom'
-import Checkbox from './checkboxCom'
-import './test.css'
+import Input from '../orderform/inputCom'
+import Checkbox from '../orderform/checkboxCom'
+import '../../content/css/test.css'
 class Login extends Component{
 	render(){
 		return(

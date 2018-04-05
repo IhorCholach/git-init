@@ -1,10 +1,9 @@
 import React, {Component} from 'react'
-import Checkbox from './checkboxCom'
-import Header from './header'
-import Input from './inputCom'
+import Checkbox from './orderform/checkboxCom'
+import Input from './orderform/inputCom'
 
 // import '../css/orderForm.css'
-import './test.css'
+import '../content/css/test.css'
 
 class OrderForm extends Component{
 	handleBtnClick = (url) => {
@@ -14,7 +13,6 @@ class OrderForm extends Component{
 	render(){
 		return (
 			<div>
-				<Header />
 				 <form className="formOrder">
 				 	<h1>Make Order</h1>
 				  	<Input className="zzz" name="surname" value="surname" text="Surname"  />

@@ -4,19 +4,19 @@
 }
 @font-face{
 	font-family: shire;
-	src: url(../content/font/BerkshireSwash-Regular.ttf);
+	src: url(../font/BerkshireSwash-Regular.ttf);
 }
 @font-face{
 	font-family: rokki;
-	src: url(../content/font/Rokkitt-Regular.ttf);
+	src: url(../font/Rokkitt-Regular.ttf);
 }
 @font-face{
 	font-family: rokki-lite;
-	src: url(../content/font/Rokkitt-Light.ttf);
+	src: url(../font/Rokkitt-Light.ttf);
 }
 @font-face{
 	font-family: rokki-black;
-	src: url(../content/font/Rokkitt-Black.ttf);
+	src: url(../font/Rokkitt-Black.ttf);
 }
 body{
 	height: 100%;
@@ -37,7 +37,7 @@ body{
 	justify-content: space-around;
 	height: 15vh;
 	align-items: center;
-	background: url(../content/img/Background.png) no-repeat center;
+	background: url(../img/Background.png) no-repeat center;
 }
 .static__header__nav{
 	display: flex;
@@ -100,7 +100,7 @@ body{
 }
 .chef__meals__chef{
 	width: 20%;
-	background: url(../content/img/Chefbg.png) no-repeat center;
+	background: url(../img/Chefbg.png) no-repeat center;
 	width: 400px;
 	height: 470px;
 	position: relative;
@@ -172,21 +172,21 @@ body{
 	transition: .7s;
 }
 .meals__meat{
-	background: url(../content/img/meat.png) no-repeat center;
+	background: url(../img/meat.png) no-repeat center;
 	margin-top: 20px;
 	}
 .meals__fish{
-	background: url(../content/img/fish.png);
+	background: url(../img/fish.png);
 	/* margin-right: 20px; */
 	margin-top: 20px;
 }
 .meals__soup{
-	background: url(../content/img/soup.png);;
+	background: url(../img/soup.png);;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 .meals__salat{
-	background: url(../content/img/salat.png);
+	background: url(../img/salat.png);
 	margin-top: 20px;
 	margin-bottom: 20px;
 }

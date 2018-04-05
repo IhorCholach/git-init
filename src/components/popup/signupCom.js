@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import Input from './inputCom'
-import './test.css'
+import Input from '../orderform/inputCom'
+import '../../content/css/test.css'
 class Sign extends Component{
 	handleBtnClick = (url) => {
 		this.props.history.push(url);
